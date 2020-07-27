@@ -54,10 +54,71 @@
    90%{color: DodgerBlue;}
      100%{color: orange;}
  }
+ .name {
+   font-size: 30px;
+   margin-left: 1.2rem; font-family: roboto_slabregular, monospace;
+ }
+ .projects {
+  font-size: 25px;
+  margin-left: 1.2rem; font-family: roboto_slabregular, monospace;
+}
  canvas {
      display: block;
  }
 .row {
   display: flex;
-  
+  flex-wrap: wrap;
+}
+.center {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.icons {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  font-size: 40px;
+}
+.fab {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+.subtitle {
+  margin-left: 20%;
+  margin-right: 20%;
+  font-family: assistantlight, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+@media (min-width:600px) {
+  .name {
+    font-size: 38px;
+  }
+  .projects {
+    font-size: 34px;
+  }
+}
+
+@media (min-width:800px) {
+  .name {
+    font-size: 45px;
+  }
+  .projects {
+    font-size: 40px;
+  }
+}
+
+@media (min-width:1000px) {
+  .name {
+    /* Never get larger than this */
+    font-size: 55px;
+  }
+  .projects {
+    /* Never get larger than this */
+    font-size: 40px;
+  }
 }
